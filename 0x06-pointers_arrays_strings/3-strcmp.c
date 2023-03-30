@@ -2,7 +2,7 @@
 /**
  * _strcmp - compare string values
  * @str1: Input
- * @str2: Input 
+ * @str2: Input
  *
  * Return: str1[i] - str2[i]
  */
@@ -21,4 +21,3 @@ int _strcmp(char *str1, char *str2)
 	}
 	return (0);
 }
-
