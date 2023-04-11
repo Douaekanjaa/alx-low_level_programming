@@ -26,7 +26,9 @@ char *str_concat(char *s1, char *s2)
 	resultat = (char *)malloc((leng1 + leng2 + 1) * sizeof(char));
 
 	if (resultat == NULL)
+	{
 		return (NULL);
+	}
 
 	memcpy(resultat, s1, leng1);
 	memcpy(resultat + leng1, s2, leng2);
