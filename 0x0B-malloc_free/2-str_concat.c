@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	memcpy(resultat + leng1, s2, leng2);
 	resultat[leng1 + leng2] = '\0';
 
-	return (resultat);
+	return strdup(resultat);
 
 }
 
