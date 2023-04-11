@@ -3,7 +3,8 @@
 #include "main.h"
 
 /**
-  * _strdup - allocates a new block of memory and creates a duplicate of the Input string
+  * _strdup - allocates a new block of memory and
+  *creates a duplicate of the Input string
   *@str: input type string
   *Return: 0
 */
@@ -23,7 +24,7 @@ char *_strdup(char *str)
 		{
 			i++;
 		}
-		new_ch =malloc(sizeof(char) * (i + 1));
+		new_ch = malloc(sizeof(char) * (i + 1));
 
 		if (new_ch == NULL)
 		{
