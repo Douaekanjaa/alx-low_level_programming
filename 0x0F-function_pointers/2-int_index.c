@@ -4,7 +4,7 @@
   * int_index - Search for an integer
   * @array: array
   * @size: the number of element in array
-  * @cmp: a pointer 
+  * @cmp: a pointer
   * Return: -1
 */
 
@@ -25,7 +25,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		}
 
 	}
-	
+
 	return (-1);
 }
 
