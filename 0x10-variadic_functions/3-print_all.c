@@ -10,15 +10,14 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-
-	va_start(args, format);
-
 	char c;
 	int i;
 	float f;
 	char *s;
 
 	const char *p = format;
+
+	va_start(args, format);
 
 	while (*p)
 	{
@@ -57,9 +56,9 @@ void print_all(const char * const format, ...)
 		{
 			printf(", ");
 		}
-		printf("\n");
 		va_end(args);
 }
+printf("\n");
 }
 
 
