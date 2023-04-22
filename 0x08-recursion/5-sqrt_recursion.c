@@ -1,5 +1,25 @@
 #include "main.h"
 
+int helper(int n, int start, int end);
+
+/**
+  * _sqrt_recursion - returns the natural square root of a number
+  * @n: number
+  * Return: n or -1 if the input number doesn't have a natural sqaure root
+*/
+int _sqrt_recursion(int n)
+{
+        if (n < 0)
+        {
+                return (-1);
+        }
+        else if (n == 0 || n == 1)
+        {
+                return (n);
+        }
+        return (helper(n, 1, n));
+}
+
 /**
  * helper - find the square root of a number
  * @start: the start of the range
@@ -39,21 +59,4 @@ int helper(int n, int start, int end)
 	}
 }
 
-/**
-  * _sqrt_recursion - returns the natural square root of a number
-  * @n: number
-  * Return: n or -1 if the input number doesn't have a natural sqaure root
-*/
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	return (helper(n, 1, n));
-}
 
