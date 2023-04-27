@@ -6,7 +6,7 @@
   * @h: pointer
   * Return: number of elements
 */
-size_t list_len(const list_l *h)
+size_t list_len(const list_t *h)
 {
 	size_t nomb = 0;
 
