@@ -11,7 +11,7 @@
 */
 typedef struct listint_s
 {
-	Int n;
+	int n;
 	struct listint_s *next;
 } listint_t;
 
